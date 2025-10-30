@@ -43,7 +43,9 @@ Car create_car() {
     std::cin >> sales_price;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    return Car(name, age, retail_price, sales_price);
+    Car a = Car(name, age, retail_price, sales_price);
+
+    return a;
 }
 
 int main() {
